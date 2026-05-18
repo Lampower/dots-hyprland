@@ -29,7 +29,7 @@ hl.gesture({
     end
 })
 hl.gesture({
-    fingers = 4,
+    fingers = 3,
     direction = "down",
     action = function()
         hl.dispatch(hl.dsp.global("quickshell:overviewWorkspacesToggle"))
