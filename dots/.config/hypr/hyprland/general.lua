@@ -254,7 +254,9 @@ hl.animation({
 
 hl.config({
     input = {
-        kb_layout = "us",
+        --# maybe i should transfer it to keyboard file
+        kb_layout = "us,ru",
+        kb_options = "grp:alt_shift_toggle",
         numlock_by_default = true,
         repeat_delay = 250,
         repeat_rate = 35,
