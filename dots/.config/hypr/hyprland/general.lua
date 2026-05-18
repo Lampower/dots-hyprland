@@ -7,22 +7,22 @@ hl.monitor({
 })
 
 hl.gesture({
-    fingers = 3,
+    fingers = 4,
     direction = "swipe",
     action = "move"
 })
 hl.gesture({
-    fingers = 3,
+    fingers = 4,
     direction = "pinch",
     action = "fullscreen"
 })
 hl.gesture({
-    fingers = 4,
+    fingers = 3,
     direction = "horizontal",
     action = "workspace"
 })
 hl.gesture({
-    fingers = 4,
+    fingers = 3,
     direction = "up",
     action = function()
         hl.dispatch(hl.dsp.global("quickshell:overviewWorkspacesToggle"))
@@ -284,7 +284,7 @@ hl.config({
         allow_session_lock_restore = true,
         session_lock_xray = true,
         initial_workspace_tracking = false,
-        focus_on_activate = true
+        focus_on_activate = false
     },
 
     binds = {

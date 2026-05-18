@@ -2,7 +2,7 @@
 if status is-interactive
     # No greeting
     set fish_greeting
-
+    fastfetch
     # Use starship
     function starship_transient_prompt_func
         starship module character
@@ -22,6 +22,7 @@ if status is-interactive
     alias clear "printf '\033[2J\033[3J\033[1;1H'"
     alias celar "printf '\033[2J\033[3J\033[1;1H'"
     alias claer "printf '\033[2J\033[3J\033[1;1H'"
+    alias cls "clear"
     alias pamcan pacman
     alias q 'qs -c ii'
     if test "$TERM" != "linux"
